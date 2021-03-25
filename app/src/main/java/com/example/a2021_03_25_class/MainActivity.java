@@ -32,9 +32,10 @@ public class MainActivity extends AppCompatActivity {
     private AdapterView.OnItemSelectedListener spinnerOnItemSelected =new AdapterView.OnItemSelectedListener() {
         @Override
         public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-            //Toast.makeText(this,)
+
             String sPos=String.valueOf(position);
             String sInfo=parent.getItemAtPosition(position).toString();
+            Toast.makeText(MainActivity.this,"pos:"+position+":"+sInfo,Toast.LENGTH_LONG).show();
             //String sInfo=parent.getSelectedItem().toString();
             tvhello.setText("選項"+sPos+":"+sInfo);
         }
