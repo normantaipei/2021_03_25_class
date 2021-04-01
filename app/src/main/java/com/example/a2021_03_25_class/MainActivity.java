@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         spinner.setAdapter(adapter);
 
          */
+
         spinner.setSelection(2, false);
         spinner.setOnItemSelectedListener(spinnerOnItemSelected);
         tvhello= (TextView) findViewById(R.id.hello);
